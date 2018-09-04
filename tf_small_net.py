@@ -1,4 +1,5 @@
 # TensorFlow and tf.keras
+
 import tensorflow as tf
 from tensorflow import keras
 
@@ -66,6 +67,7 @@ def custom_fit(model, X_tr, y_tr, X_val, y_val):
 
 TRAIN = True
 if __name__=="__main__":
+  print("BEFORE RUNNING script, run command:\n mkdir training_1 && mkdir training_1/board_logs")
   X, y = load_dataset()
 
   # Split dataset in train, validation and test sets
